@@ -61,9 +61,9 @@ class _SearchScreenState extends State<SearchScreen> {
             controller: searchController,
             decoration: InputDecoration(
               prefixIcon: Icon(Icons.search),
-              border: InputBorder.none,
+              // border: InputBorder.none,
               focusedBorder: InputBorder.none,
-              enabledBorder: InputBorder.none,
+              // enabledBorder: InputBorder.none,
               hintText: 'Search',
               hintStyle: TextStyle(
                   fontSize: 15,
