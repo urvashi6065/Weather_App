@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
       for (int i = 0; i < searchList.length; i++) {
         if (searchList[i].cityName == object!.location.name) {
           setState(() {
-            flag = true;
+            flag = false;
           });
         }
       }
