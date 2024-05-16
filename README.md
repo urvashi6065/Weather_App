@@ -27,4 +27,7 @@ samples, guidance on mobile development, and a full API reference.
 ![w-10](https://github.com/urvashi6065/Weather_App/assets/138776432/917df144-d8d9-4abf-bcec-1bf65665290d)
 <p>
    <img src="https://github.com/urvashi6065/PlatformConvter-Project/blob/main/Platform-1.png" heigth="500"/width="300"/>
+<img src="https://github.com/urvashi6065/Weather_App/blob/main/w-7.png height=""500" width="300"/>
+   https://github.com/urvashi6065/Weather_App/blob/main/w-7.png
 </p>
+
