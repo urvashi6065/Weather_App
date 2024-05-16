@@ -15,9 +15,7 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-<p style="width:300px">
 ![w-1](https://github.com/urvashi6065/Weather_App/assets/138776432/e4e72ec3-7991-42d8-96c1-eda08361dfd2)
-</p>
 ![w-2](https://github.com/urvashi6065/Weather_App/assets/138776432/4a01ddfa-169b-4b14-90fc-72b4e8278b75)
 ![w-3](https://github.com/urvashi6065/Weather_App/assets/138776432/2d1f50cd-0418-40e1-81c6-92e98d35dc1d)
 ![w-4](https://github.com/urvashi6065/Weather_App/assets/138776432/ce50af74-a848-4906-b91c-55945905d54c)
