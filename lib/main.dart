@@ -25,9 +25,11 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           theme: (consumerVar.getTheme == true)
               ? ThemeData.dark(
-                  useMaterial3: true,
+                  // useMaterial3: true,
                 )
-              : ThemeData.light(),
+              : ThemeData.light(
+            // useMaterial3: true,
+          ),
           home: SplashScreen()
         );
       }),

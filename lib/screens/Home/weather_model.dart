@@ -164,8 +164,8 @@ class Condition {
 class Forecast {
   final List<Forecastday> forecastday;
 
-  Forecast({
-    required this.forecastday,
+      Forecast({
+        required this.forecastday,
   });
 
   factory Forecast.fromJson(Map<String, dynamic> json) => Forecast(

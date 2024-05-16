@@ -10,10 +10,11 @@ import '../search_screen/Search.dart';
 import '../setting_screen/Setting_Scrren.dart';
 
 class HomeScreen extends StatefulWidget {
-  final String? searchController;
+    final String? searchController;
 
-  const HomeScreen({Key? key, required this.searchController})
-      : super(key: key);
+  const HomeScreen({
+    Key? key, this.searchController,
+  }) : super(key: key);
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -25,9 +26,29 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   initState() {
+    getSharedFunction();
+
+    // getSharedFunction();
+
+    super.initState();
+  }
+
+  String? share;
+
+  getSharedFunction() async {
+    SharedPreferences sharedPreferencesVar =
+        await SharedPreferences.getInstance();
+    setState(() {
+      share = sharedPreferencesVar.getString('controller') ?? 'Ahmedabad';
+      print("sjkedhfjnwas");
+      print(share);
+    });
     isLoading = true;
-    // TODO: implement initState
-    ApiRepo().loadApiData(widget.searchController).then((value) {
+    // TODO: implement initStates
+    print("share");
+    print(share);
+    print(widget.searchController);
+    ApiRepo().loadApiData(widget.searchController??share).then((value) {
       setState(() {
         object = value;
         isLoading = false;
@@ -52,9 +73,6 @@ class _HomeScreenState extends State<HomeScreen> {
         });
       }
     });
-    // getSharedFunction();
-
-    super.initState();
   }
 
   @override

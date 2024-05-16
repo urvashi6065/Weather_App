@@ -50,26 +50,26 @@ class _SearchScreenState extends State<SearchScreen> {
               color: Colors.grey.shade200,
               borderRadius: BorderRadius.circular(10)),
           child: TextFormField(
-            onFieldSubmitted: (value) {
+            onFieldSubmitted: (value) async {
               searchController.text = value;
               print(searchController.text);
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => HomeScreen(
-                        searchController: searchController.text,
-                      )));
+              SharedPreferences sharedPreferencesVar =
+                  await SharedPreferences.getInstance();
+              sharedPreferencesVar.setString(
+                  'controller', searchController.text);
+              print(sharedPreferencesVar.getString('controller'));
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => HomeScreen()));
             },
             controller: searchController,
+            style: TextStyle(color: Colors.black),
             decoration: InputDecoration(
               prefixIcon: Icon(Icons.search),
               // border: InputBorder.none,
               focusedBorder: InputBorder.none,
               // enabledBorder: InputBorder.none,
               hintText: 'Search',
-              hintStyle: TextStyle(
-                  fontSize: 15,
-                  color: (providerVar.getTheme == true
-                      ? Colors.black38
-                      : Colors.black38)),
+              hintStyle: TextStyle(color: Colors.black54)
             ),
           ),
         ),
@@ -99,9 +99,6 @@ class _SearchScreenState extends State<SearchScreen> {
                           builder: (context) => HomeScreen(
                               searchController: searchList[index].cityName)),
                       (route) => false);
-                  // Navigator.of(context).push(MaterialPageRoute(
-                  //     builder: (context) => HomeScreen(
-                  //         searchController: searchList[index].cityName)));
                 },
                 child: Container(
                   height: 100,
