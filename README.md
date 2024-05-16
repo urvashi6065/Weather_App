@@ -25,3 +25,6 @@ samples, guidance on mobile development, and a full API reference.
 ![w-8](https://github.com/urvashi6065/Weather_App/assets/138776432/e2ec9e1c-2883-4d7f-be5f-a5292798d3b6)
 ![w-9](https://github.com/urvashi6065/Weather_App/assets/138776432/034f4d56-e409-4832-95f9-2a2aecdeb543)
 ![w-10](https://github.com/urvashi6065/Weather_App/assets/138776432/917df144-d8d9-4abf-bcec-1bf65665290d)
+<p>
+   <img src="https://github.com/urvashi6065/PlatformConvter-Project/blob/main/Platform-1.png" heigth="500"/width="300"/>
+</p>
